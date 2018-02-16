@@ -4,6 +4,9 @@
 
 ## Build Setup
 
+You will need Node.js, npm to use this project
+https://www.npmjs.com/get-npm
+
 ``` bash
 # install dependencies
 npm install
