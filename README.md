@@ -50,7 +50,7 @@ To create a new component with a new route, do as follow :
    * Add the link
    ``<router-link to="/componentx">ComponentX</router-link>`` or ``<router-link :to="{ name : 'ComponentX' }">ComponentX</router-link>``
    
- 2. /src/ComponentX.vue
+ 3. /src/ComponentX.vue
    * Add the content to the new component
    ```
     <template>
@@ -63,4 +63,21 @@ To create a new component with a new route, do as follow :
           name: 'ComponentX'
         }
     </script>
+   ```
+   
+To use json files in your component, simply do as folow
+ 1. /src/assets/path_to_json/file.json
+   * Add your file in the asset folder
+
+ 2. /src/ComponentX.vue
+   * Import your file under a variable name, and use it when declaring the Vue's data
+   ```
+    import JSONfile from '@/assets/path_to_json/file.json'
+    export default {
+      name: 'ComponentX',
+      data: function () {
+        return {
+          data: JSONfile
+        }
+      },
    ```
