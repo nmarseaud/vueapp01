@@ -40,11 +40,15 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 To create a new component with a new route, do as follow :
  1. /src/router/index.js
-   * Add import ``About from '@/components/ComponentX'``
-   * Add route in routes[] ``{ path: '/componentx', name: 'ComponentX', component: ComponentX }``
+   * Add import
+   ``ComponentX from '@/components/ComponentX'``
+   
+   * Add route in routes[]
+   ``{ path: '/componentx', name: 'ComponentX', component: ComponentX }``
    
  2. /src/AnyComponent.vue
-   * Add the link ``<router-link to="/componentx">ComponentX</router-link>`` or ``<router-link :to="{ name : 'ComponentX' }">ComponentX</router-link>``
+   * Add the link
+   ``<router-link to="/componentx">ComponentX</router-link>`` or ``<router-link :to="{ name : 'ComponentX' }">ComponentX</router-link>``
    
  2. /src/ComponentX.vue
    * Add the content to the new component
@@ -56,7 +60,7 @@ To create a new component with a new route, do as follow :
     
     <script>
         export default {
-          name: 'About'
+          name: 'ComponentX'
         }
     </script>
    ```
